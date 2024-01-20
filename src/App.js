@@ -1,14 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Login from "./Login";
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
-      </header>
+      {/*<div className="information">
+        <label htmlFor="email">Login:</label>
+        <input 
+          type="email" placeholder="Enter Email"
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
+         />
+        <label htmlFor="password">Password:</label>
+        <input 
+          type="password" placeholder="Enter Password"
+          onChange={(event) => {
+            setPwd(event.target.value);
+          }}
+          >
+        </input>
+        <button>Login</button>        
+        <button onClick={displayInfo}>Debug</button>
+      </div>*/}
+      
+      <Login />      
     </div>
   );
 }
