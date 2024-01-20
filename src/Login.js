@@ -47,8 +47,8 @@ function Login() {
                     <label htmlFor="pwd">Password:</label>
                     <input type="password" placeholder="Enter Password" id="pwd" name="pwd" className="form-control" onChange={(event) => { setPwd(event.target.value); setIsAuthenticated("true");}}></input>                    
                 </div>
-                <button className="btn btn-success">Login</button>
-                {(isAuthenticated == "false")  ? <div className="text-danger">Incorrect Username or Password</div> : <div></div>}
+                <button className="btn btn-primary">Login</button>
+                {(isAuthenticated == "false")  ? <div className="text-warning">Incorrect Username or Password</div> : <div></div>}
             </form>
       </div>
     </div>
